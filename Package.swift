@@ -8,15 +8,9 @@ let package = Package(
         .macOS(.v11)
     ],
     products: [
-        .library(
-            name: "VLCKit",
-            targets: ["VLCKit"]
-        )
+        .library(name: "VLCKit", targets: ["VLCKit"])
     ],
     targets: [
-        .binaryTarget(
-            name: "VLCKit",
-            path: "./MobileVLCKit.xcframework"
-        )
+        .target(name: "VLCKit", path: "Sources")
     ]
 )
